@@ -1,0 +1,17 @@
+
+
+const express = require('express')
+const server = express()
+
+server.use(express.static("public")) //pedindo para o express deixar o local raiz como a pasta com arquivos estáticos (o public), após colocar para usar o express com a const server
+
+.get("/", (req, res) => { //arrow function
+    return res.sendFile(__dirname + "/views/index.html") //retorna a resposta
+}) //pedido da barra e o retorno da resposta através da requisição
+.get("/study", (req, res) => {
+    return res.sendFile(__dirname + "/views/study.html")
+})
+.get("/give-classes", (req, res) => {
+    return res.sendFile(__dirname + "/views/give-classes.html")
+})
+.listen(5500) //chamando uma função do servidor express (baixado pelo bash) e ela vai retornar um object chamado listen com uma porta
