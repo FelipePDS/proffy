@@ -1,9 +1,51 @@
+.icon-menu-container {
+    background-color: #9871F5;
+    border-radius: 50%;
+
+    right: 2.1rem;
+    bottom: 1.9rem;
+    position: fixed;
+
+    width: 6.3rem;
+    height: 6.3rem;
+
+    cursor: pointer;
+}
+
+.icon-menu {
+    right: 3.5rem;
+    bottom: 3.5rem;
+    position: fixed;
+
+    width: 3.2rem;
+    height: 3.2rem;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    opacity: 78%;
+}
+
+.icon-menu-container:hover {
+    background-color: #9268f5;
+}
+
+.icon-menu-container:hover .icon-menu {
+    opacity: 100%;
+}
+
 .page-header {
     background-color: var(--color-primary);
 
     display: flex;
     flex-direction: column;
 
+    box-shadow: 5px 0px 6px;
+}
+
+.page-header .background-top-bar-container {
+    background-color: var(--color-primary-darker);
     box-shadow: 5px 0px 6px;
 }
 
@@ -21,6 +63,12 @@
 .page-header .top-bar-container a {
     height: 3.2rem;
     transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container p {
+    color: #a283e9;
+    font-family: Archivo;
+    cursor: default;
 }
 
 .page-header .top-bar-container a:hover {

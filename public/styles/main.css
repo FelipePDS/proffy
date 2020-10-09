@@ -55,7 +55,8 @@ body {
 body,
 input,
 button,
-textarea {
+textarea,
+select {
     font-weight: 500;
     font-family: Poppins;
     font-size: 1.6rem;

@@ -1,3 +1,22 @@
+::-webkit-scrollbar-track {
+    background-color: #dad1ec;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height: 6px;
+    background: #d6c8f5;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary-lighter);
+    border-radius: .8rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8157e4;
+}
+::-webkit-scrollbar-button {
+    scrollbar-arrow-color: black;
+}
+
 #page-give-classes #container {
     width: 100vw;
     height: 100vh;
@@ -5,6 +24,16 @@
 
 #page-give-classes .page-header .header-content {
     margin-bottom: 6.4rem;
+}
+
+#page-give-classes .page-header .header-content .header-content-text .header-content-text-rocket {
+    display: flex;
+    align-items: center;
+}
+
+#page-give-classes .page-header .header-content .header-content-text .header-content-text-rocket img {
+    margin-right: 2.5rem;
+    margin-top: 24px;
 }
 
 #page-give-classes main {
@@ -62,7 +91,11 @@
 #page-give-classes .input-block+.textarea-block,
 #page-give-classes .select-block+.input-block { /*ele pega um input-block que anterior à ele tenha um input-block (ou seja, não se aplicará ao primeiro input-block) - Obs. anotação do primeiro item selecionado*/
     margin-top: 2.4rem;
-    
+}
+
+.inputs-inline {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
 }
 
 #page-give-classes main footer {
@@ -71,6 +104,9 @@
     background: var(--color-box-footer);
     border-top: 1px solid var(--color-line-in-white);
     margin-top: 6.4rem;
+
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
 }
 
 #page-give-classes main footer p {
@@ -118,7 +154,8 @@
     border-top: 1px solid var(--color-line-in-white);
 }
 
-.schedule-item #close-container {
+/*format close*/
+.schedule-item #close-icon {
     display: none;
 }
 
@@ -139,6 +176,54 @@
     filter: invert(90%);
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+/*form cost*/
+.format-cost {
+    position: relative;
+}
+
+.format-cost span {
+    position: absolute;
+    margin-left: 3px;
+    padding: 24px 15px;
+    pointer-events: none;
+}
+
+.input-cost {
+    padding-left: 40px !important;
+}
+
+.select-block select {
+    color: #878391;
+}
+
+/*alert-box*/
+.alert-box-clone-field {
+    display: none;
+
+    border: 1px rgba(153, 113, 245, 0.466) solid;
+    border-radius: 0.4rem;
+
+    color: rgba(104, 66, 194, 0.719);
+    background-color: rgba(153, 113, 245, 0.247);
+
+    padding: .9rem;
+
+    position: fixed;
+
+    bottom: 25%;
+    left: calc(50% - 118.45px);
+}
+
 @media (min-width: 700px) {
     #page-give-classes #container {
         max-width: 100vw;
@@ -148,8 +233,25 @@
         margin-bottom: 0;
     }
 
+    #page-give-classes .page-header .header-content .header-content-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
     #page-give-classes main fieldset {
         padding: 0 64px;
+    }
+
+    .inputs-inline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2.2rem;
+        margin-top: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .inputs-inline .input-block {
+        margin-top: 0 !important;
     }
 
     .schedule-item {

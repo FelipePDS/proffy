@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proffy - Estudar</title>
+    <title>Proffy | Dar aulas</title>
 
     <link rel="stylesheet" href="/styles/main.css">
 
@@ -16,8 +16,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
-    <script src="/scripts/addField.js" defer></script></script><!--ele vai ler esse script somente depois de um certo tempo-->
+    <script src="/scripts/scripts.js" defer></script></script><!--ele vai ler esse script somente depois de um certo tempo-->
 
+    <link rel="shortout icon" href="/images/favicon.png" type="image/png">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+ 
 </head>
 <body id='page-give-classes'>
 
@@ -26,18 +33,31 @@
         <!--Menu-->
         <header class="page-header">
 
-            <div class="top-bar-container">
+            <div class="background-top-bar-container">
 
-                <a href="/">
-                    <img src="/images/icons/back.svg" alt="Voltar">
-                </a>
-                <img src="/images//logo.svg" alt="Proffy">
+                <div class="top-bar-container">
+
+                    <a href="/">
+                        <img src="/images/icons/back.svg" alt="Voltar">
+                    </a>
+                    <p>Dar aulas</p>
+                    <img src="/images//logo.svg" alt="Proffy">
+
+                </div>
 
             </div>
 
             <div class="header-content">
                 <strong>Que incrível que você quer dar aulas</strong>
-                <p>O primeiro passo, é preencher o formulário de inscrição</p>
+
+                <div class="header-content-text">
+                    <p>O primeiro passo, é preencher o formulário de inscrição</p>
+
+                    <div class="header-content-text-rocket">
+                        <img src="/images/icons/rocket.svg" alt="Emoij de foguete">
+                        <p>Prepare-se! <br> Vai ser o máximo.</p>
+                    </div>
+                </div>
             </div>
 
         </header>
@@ -53,19 +73,24 @@
                         <input name="name" id="name" required>
                     </div>
 
-                    <div class="input-block">
-                        <label for="avatar">Link da sua foto <small>(comece com http://)</small></label>
-                        <input name="avatar" id="avatar" type="url" required>
-                    </div>
+                    <div class="inputs-inline">
 
-                    <div class="input-block">
-                        <label for="whatsapp">Whatsapp <small>(somente números)</small></label>
-                        <input name="whatsapp" id="whatsapp"  type="number" required>
+                        <div class="input-block">
+                            <label for="avatar">Link da sua foto <small>(comece com http://)</small></label>
+                            <input name="avatar" id="avatar" type="url" required>
+                        </div>
+
+                        <div class="input-whatsapp input-block">
+                            <label for="whatsapp">Whatsapp</label>
+                            <input name="whatsapp" id="whatsapp" onkeypress="$(this).mask('(00) 90000-0000')" placeholder="( ) _ _ _ _ _ - _ _ _ _" minlength="15" required>
+                        </div>
+
                     </div>
 
                     <div class="textarea-block">
-                        <label for="bio">Biografia</label>
-                        <textarea name="bio" id="bio"></textarea>
+                        <label for="bio">Biografia <small>(Máximo de 350 caracteres)</small></label>
+                        <textarea id="myTextarea" name="bio" id="bio" maxlength="350" required></textarea>
+                        <div id="view"></div>
                     </div>
 
                 </fieldset>
@@ -76,7 +101,7 @@
                     <div class="select-block">
                         <label for="subject">Matéria</label>
                         <select name="subject" id="subject" required>
-                            <option value="" hidden="" disabled="">Selecione uma opção</option>
+                            <option value="" hidden="" class="first-option">Selecione qual você quer ensinar</option>
 
                             {%for subject in subjects%}
                                 <option value="{{loop.index}}">
@@ -89,9 +114,11 @@
 
                     <div class="input-block">
                         <label for="cost">Custo da sua aula/hora
-                            <small>(R$)</small>
                         </label>
-                        <input name="cost" type="cost" id="cost" type="number" required>
+                        <div class="format-cost">
+                            <span>R$</span>
+                            <input class="input-cost" name="cost" id="cost" type="number" required>
+                        </div>
                     </div>
                 </fieldset>
 
@@ -105,14 +132,14 @@
                         
                         <div id="close-container">
                             <div id="close">
-                                <img src="/images/icons/times-solid.svg" alt="close">
+                                <img src="/images/icons/times-solid.svg" alt="close" id="close-icon">
                             </div>
                         </div>
 
                         <div class="select-block">
                             <label for="weekday">Dia Da Semana</label>
                             <select name="weekday[]" required>
-                                <option value="" disabled="" hidden="">Selecione uma opção</option>
+                                <option value="" hidden="">Selecione o dia</option>
 
                                 {%for weekday in weekdays %}
                                     <option value="{{loop.index0}}">
@@ -133,13 +160,17 @@
                             <input type="time" name="time_to[]" required>
                         </div>
 
+                            <div class="alert-box-clone-field">
+                                Horário adicionado abaixo
+                            </div>
+
                     </div>
 
                 </fieldset>
             </form>
 
             <!--Enviar Formulário aqui-->
-            <footer>
+            <footer id="footer-container">
                 <p>
                     <img src="/images/icons/warning.svg" alt="Aviso importante">
                     Importante! <br>
@@ -148,6 +179,10 @@
                 <button type="submit" form="create-class">Salvar Cadastro</button>
             </footer>
         </main>
+
+        <div class="icon-menu-container">
+            <img class="icon-menu" src="/images/icons/edit-solid.svg" alt="Editar">
+        </div>
 
     </div>
 

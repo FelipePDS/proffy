@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proffy | cadastro salvo</title>
+    
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <link rel="stylesheet" href="/styles/partials/sucess-page.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+    <link rel="shortout icon" href="/images/favicon.png" type="image/png">
+
+</head>
+
+<body id="page-sucess-page" onload="move()">
+    
+    <div id="container">
+
+        <div class="background">
+            <img src="/images/success-background.svg" alt="">
+        </div>
+
+        <div class="sucess-page">
+            <img src="/images/icons/success-check-icon.svg" alt="Inscrição Efetuada com sucesso">
+
+            <div class="sucess-page-content">
+                <strong>Cadastro salvo!</strong>
+                <p>Tudo certo. Seu cadastro está na nossa lista de professores</p>
+                <p>Agora é só ficar de olho em seu Whatsapp</p>
+            </div>
+
+            <a href="/study{{queryString}}">Acessar listas</a>
+
+            <div id="myProgress">
+                <div id="myBar">
+                    <div id="label">1%</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var decodedQueryString = "{{queryString}}".replace(/&amp;/g, '&')
+        setTimeout(function() {
+            window.location.href = "/study" + decodedQueryString
+        }, 4000);
+
+        //barra de progresso
+        function move() {
+            var elem = document.getElementById("myBar");
+            var width = 1;
+            var id = setInterval(frame, 40);
+            function frame() {
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    elem.style.width = width + '%';
+                    document.getElementById("label").innerHTML = width * 1 + '%';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

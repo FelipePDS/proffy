@@ -1,3 +1,93 @@
+::-webkit-scrollbar-track {
+    background-color: #dad1ec;
+}
+::-webkit-scrollbar {
+    width: 1.2rem;
+    height: .5rem;
+    background: #d6c8f5;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary-lighter);
+    border-radius: .8rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8157e4;
+}
+::-webkit-scrollbar-button {
+    scrollbar-arrow-color: black;
+}
+
+[aria-label] {
+    position: relative;
+}
+
+[aria-label]::after {
+    content: attr(aria-label);
+    display: none;
+    position: absolute;
+    top: 122%;
+    left: 25%;
+    z-index: 5000;
+    pointer-events: none;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: .9em;
+    color: #fff;
+    background-color: rgb(41, 41, 59);
+    border-radius: .8rem;
+}
+
+[aria-label]:hover::after {
+    display: block;
+}
+
+#page-study .page-header .header-content .header-content-text .strong {
+    margin-bottom: 2.7rem;
+}
+
+#page-study .page-header .header-content .header-content-text .header-content-text-smile {
+    max-width: 20rem;
+    align-items: center;
+    margin: auto 0 auto 0;
+}
+
+#page-study .page-header .header-content .header-content-text .header-content-text-smile .header-content-text-smile-center {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    cursor: pointer;
+}
+
+#page-study .page-header .header-content .header-content-text .header-content-text-smile .header-content-text-smile-center img {
+    margin-right: 1.7rem;
+}
+
+#page-study .page-header .header-content .header-content-text .header-content-text-smile .header-content-text-smile-center p {
+    margin-top: 0;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    
+    transition: 0.25s;
+}
+
+#page-study .page-header .header-content .header-content-text .header-content-text-smile .header-content-text-smile-center .to-view {
+    width: 15px;
+    margin-right: 3.4rem;
+
+    transition: 0.25s;
+
+    opacity: 85%;
+}
+
+#page-study .page-header .header-content .header-content-text .header-content-text-smile .header-content-text-smile-center:hover .to-view {
+    filter: brightness(140%);
+}
+
+#page-study .page-header .header-content .header-content-text .header-content-text-smile .header-content-text-smile-center:hover p {
+    filter: brightness(140%);
+}
+
 #page-study #container {
     width: 100vw;
     height: 100vh;
@@ -89,6 +179,62 @@
     line-height: 2.8rem;
 }
 
+/*teacher schedule*/
+.wrapper {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.teacher-item .teacher-schedule {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 3rem;
+
+    width: 350%;
+    font-size: 1.5rem;
+}
+
+.teacher-item .teacher-schedule-content {
+    margin-top: 3rem;
+    margin-right: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+
+    border: 1px rgb(220, 226, 226) solid;
+    border-radius: .8rem;
+
+    background-color: rgb(250, 250, 252);
+
+    width: 34%;
+
+    cursor: default;
+    transition: border 0.2s;
+}
+
+.teacher-item .teacher-schedule-content:hover {
+    border-color: rgb(175, 180, 180);
+}
+
+.teacher-item .teacher-schedule-content:last-child {
+    margin-right: 0;
+}
+
+.teacher-item .teacher-schedule-content div p {
+    font-size: 1.3rem;
+    color: var(--color-text-complement);
+}
+
+.teacher-item .teacher-schedule-content div strong {
+    font: 700 1.6rem Archivo;
+}
+
+.teacher-item-day {
+    margin-bottom: 1.3rem;
+}
+
 .teacher-item footer {
     padding: 3.2rem 2rem;
     background-color: var(--color-box-footer);
@@ -98,6 +244,9 @@
     display: flex; /*os dois items dentro ficarão em mesma linha*/
     align-items: center;
     justify-content: space-between; /*cada item ficará um de cada lado após ele se tornarem da mesma linha*/
+
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
 }
 
 .teacher-item footer p {
@@ -139,8 +288,14 @@
 
 #page-study main .no-results {
     max-width: 30rem;
-    margin: 12rem auto;
+    margin: 12rem auto 5rem auto;
     text-align: center;
+}
+
+.container-footer {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-text-complement);
 }
 
 
@@ -173,6 +328,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    #page-study .page-header .header-content .header-content-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #page-study .page-header .header-content .header-content-text .strong {
+        margin-bottom: 0;
     }
 
     .page-header .header-content strong {
@@ -214,5 +378,14 @@
 
     .teacher-item footer button img {
         margin-right: 16px;
+    }
+
+    .teacher-item .teacher-schedule {
+        width: 140%;
+    }
+
+    .teacher-item .teacher-schedule-content {
+        width: 17%;
+        padding-right: 0;
     }
 }

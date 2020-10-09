@@ -22,6 +22,7 @@
 .textarea-block textarea {
     padding: 1.2rem 1.6rem;
     min-height: 16rem;
+    max-height: 24rem;
 
     resize: vertical; /*pode fazer o resiza na vertical*/
 }

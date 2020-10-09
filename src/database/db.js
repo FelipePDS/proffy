@@ -25,6 +25,13 @@ function execute(db) {
             time_from INTEGER,
             time_to INTEGER
         );
+
+        DELETE FROM proffys WHERE id = '';
+
+        DELETE FROM classes WHERE id = '';
+
+        DELETE FROM class_schedule WHERE id = '';
+        DELETE FROM class_schedule WHERE id = '';
     `)
 }
 
