@@ -1,12 +1,12 @@
 #page-sucess-page {
-    background: var(--color-primary);
+    background: var(--colorPrimary);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #page-sucess-page #container {
-    color: var(--color-text-in-primary);
+    color: var(--colorTextInPrimary);
 
     display: flex;
     align-items: center;
@@ -58,7 +58,7 @@
     line-height: 4.2rem;
     margin-bottom: 1.6rem;
 
-    color: var(--color-title-in-primary);
+    color: var(--colorTitleInPrimary);
 
     cursor: default;
     
@@ -70,7 +70,7 @@
 #page-sucess-page #container .sucess-page .sucess-page-content p {
     font-size: 1.6rem;
     line-height: 2.6rem;
-    color: var(--color-text-in-primary);
+    color: var(--colorTextInPrimary);
     display: flex;
     text-align: center;
     justify-content: center;
@@ -79,8 +79,8 @@
 #page-sucess-page #container .sucess-page a {
     width: 100%;
     height: 5.2rem;
-    background: var(--color-secondary);
-    color: var(--color-button-text);
+    background: var(--colorSecondary);
+    color: var(--colorButtonText);
     border: 0;
     border-radius: .8rem;
     cursor: pointer;
@@ -96,7 +96,7 @@
 }
 
 #page-sucess-page #container .sucess-page a:hover {
-    background-color: var(--color-secondary-dark);
+    background-color: var(--colorSecondaryDark);
 }
 
 #myProgress {
@@ -105,7 +105,7 @@
     width: 50%;
     height: 3rem;
 
-    background-color: var(--color-primary-lighter);
+    background-color: var(--colorPrimaryLighter);
 
     margin-top: 4rem;
     border-radius: .3rem;
@@ -114,7 +114,7 @@
     position: absolute;
     width: 1%;
     height: 100%;
-    background-color: var(--color-secondary-dark);
+    background-color: var(--colorSecondaryDark);
 
     border-radius: .3rem;
 }

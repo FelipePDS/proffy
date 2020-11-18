@@ -14,19 +14,53 @@
 
     <link rel="stylesheet" href="/styles/partials/page-give-classes.css">
 
+    <link rel="stylesheet" href="styles/webfonts/font-awesome/fontawesome-all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
-    <script src="/scripts/scripts.js" defer></script></script><!--ele vai ler esse script somente depois de um certo tempo-->
-
     <link rel="shortout icon" href="/images/favicon.png" type="image/png">
+
+    <script src="/scripts/giveClasses.js" defer></script><!--it will read this script only after a certain time-->
+    <script src="/scripts/sidebar.js" defer></script>
+    <script src="/scripts/themes.js" defer></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
  
 </head>
 <body id='page-give-classes'>
+
+    <!-- Sidebar Lateral -->
+    <nav class="nav-sidebar" id="nav-sidebar">
+
+        <span class="button-close-sidebar" id="button-close-sidebar">
+            <i class="fa fa-arrow-left"></i>
+        </span>
+
+        <div class="nav-sidebar-container">
+
+            <div class="top-sidebar">
+                <img src="/images/logo.svg" alt="Proffy">
+            </div>
+
+            <ul class="nav-sidebar-list">
+                <li id="home"><i class="solid fa fa-home"></i> Home</li>
+                <li id="proffys"><i class="solid fa fa-users"></i> Professores</li>
+                <li id="themes">
+                    <i class="solid fa fa-palette"></i> 
+                    Temas
+                    <label class="container-set-theme">
+                        <input name="theme" type="checkbox" class="button-set-theme"/>
+                        <span class="theme-toggle"></span>
+                    </label>
+                </li>
+                <li id="options"><i class="solid fa fa-cog"></i> Configurações</li>
+            </ul>
+
+        </div>
+        
+    </nav>
 
     <div id="container">
 
@@ -62,10 +96,10 @@
 
         </header>
 
-        <!--Formulário de inscrição aqui-->
+        <!--Inscription form here-->
         <main>
             <form id="create-class" action="/save-classes" method="POST">
-                <fieldset> <!-- -> agrupamento de dados -->
+                <fieldset> <!-- grouping datas -->
                     <legend>Seus dados</legend>
 
                     <div class="input-block">
@@ -95,7 +129,7 @@
 
                 </fieldset>
 
-                <!--Formulário de aula aqui-->
+                <!--Class form here-->
                 <fieldset>
                     <legend>Sobre a aula</legend>
                     <div class="select-block">
@@ -122,7 +156,7 @@
                     </div>
                 </fieldset>
 
-                <!--Formulário do cronograma de aula aqui-->
+                <!--Class schedule form here-->
                 <fieldset id="schedule-items">
                     <legend>Horários disponíveis
                         <button type="button" id='add-time'>+ Novo horário</button>
@@ -160,8 +194,12 @@
                             <input type="time" name="time_to[]" required>
                         </div>
 
-                            <div class="alert-box-clone-field">
+                            <div class="alert-box clone-field">
                                 Horário adicionado abaixo
+                            </div>
+
+                            <div class="alert-box time_error">
+                                Digite um horário inicial menor do que o final!!
                             </div>
 
                     </div>
@@ -169,19 +207,19 @@
                 </fieldset>
             </form>
 
-            <!--Enviar Formulário aqui-->
+            <!--form submit here-->
             <footer id="footer-container">
                 <p>
                     <img src="/images/icons/warning.svg" alt="Aviso importante">
                     Importante! <br>
                     Preencha todos os campos
                 </p>
-                <button type="submit" form="create-class">Salvar Cadastro</button>
+                <button type="submit">Salvar Cadastro</button>
             </footer>
         </main>
 
-        <div class="icon-menu-container">
-            <img class="icon-menu" src="/images/icons/edit-solid.svg" alt="Editar">
+        <div class="icon-menu-container" id="menu-button">
+            <img class="icon-menu" src="/images/icons/edit-solid.svg" alt="Menu">
         </div>
 
     </div>

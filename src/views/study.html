@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proffy - Estudar</title>
+    <meta http-equiv="Cache-control" content="public, max-age=10">
+    <title>Proffy | Estudar</title>
 
     <link rel="stylesheet" href="/styles/main.css">
 
@@ -14,12 +15,52 @@
 
     <link rel="stylesheet" href="/styles/partials/page-study.css">
 
+    <link rel="stylesheet" href="styles/webfonts/font-awesome/fontawesome-all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
     <link rel="shortout icon" href="/images/favicon.png" type="image/png">
-    
+
+    <script src="/scripts/sidebar.js" defer></script>
+    <script src="/scripts/study.js" defer></script>
+    <script src="/scripts/themes.js" defer></script>
+
 </head>
 <body id='page-study'>
+    <script>
+        let count = 0;
+    </script>
+
+        <!-- Sidebar Lateral -->
+        <nav class="nav-sidebar" id="nav-sidebar">
+
+            <span class="button-close-sidebar" id="button-close-sidebar">
+                <i class="fa fa-arrow-left"></i>
+            </span>
+
+            <div class="nav-sidebar-container">
+
+                <div class="top-sidebar">
+                    <img src="/images/logo.svg" alt="Proffy">
+                </div>
+
+                <ul class="nav-sidebar-list">
+                    <li id="home"><i class="solid fa fa-home"></i> Home</li>
+                    <li id="proffys"><i class="solid fa fa-users"></i> Professores</li>
+                    <li id="themes">
+                        <i class="solid fa fa-palette"></i> 
+                        Temas
+                        <label class="container-set-theme">
+                            <input name="theme" type="checkbox" class="button-set-theme"/>
+                            <span class="theme-toggle"></span>
+                        </label>
+                    </li>
+                    <li id="options"><i class="solid fa fa-cog"></i> Configurações</li>
+                </ul>
+
+            </div>
+            
+        </nav>
 
     <div id="container">
 
@@ -34,7 +75,7 @@
                         <img src="/images/icons/back.svg" alt="Voltar">
                     </a>
                     <p>Estudar</p>
-                    <img src="/images//logo.svg" alt="Proffy">
+                    <img src="/images/logo.svg" alt="Proffy">
 
                 </div>
 
@@ -50,7 +91,7 @@
                     <div class="header-content-text-smile" aria-label="Ver Todos">
                         <div class="header-content-text-smile-center" onclick="selectAllProffys()">
                             <img src="/images/icons/smile.svg" alt="Emoij de Sorriso">
-                            <p>Nós temos {{amountProffys}} professores.</p>
+                            <p>Nós temos {{amountProffys}} professores</p>
                             <img class="to-view" src="/images/icons/eye-solid.svg" alt="Visualizar">
                         </div>
                     </div>
@@ -72,7 +113,7 @@
                         </select>
                     </div>
 
-                    <!--formulário de pesquisa aqui-->
+                    <!--search form here-->
                     <div class="select-block">
                         <label for="weekday">Dia da semana</label>
                         <select name="weekday" id="weekday">
@@ -98,15 +139,15 @@
 
         </header>
 
-        <!--Publicações-->
+        <!--Publications-->
         <main>
 
             {% if proffys == "" %}
                 <p class="no-results"> Nenhum professor encontrado com a sua pesquisa. </p>
-
             {% else %}
 
                 {%for proffy in proffys %}
+
                         <article class="teacher-item">
                             <header>
                                 <img src="{{proffy.avatar}}" alt="{{proffy.name}}">
@@ -115,38 +156,51 @@
                                     <span>{{proffy.subject}}</span>
                                 </div>
                             </header>
-                            <p id='textBio'>{{proffy.bio}}</p>
+                            <p id='bioContent'>{{proffy.bio}}</p>
 
                             <div class="wrapper">
                                 <div class="teacher-schedule">
 
                                     {% for weekday in weekdays %}
-                                        <div id='teacher-schedule-content{{loop.index + proffy.id}}' class="teacher-schedule-content">
-                                            <div class="teacher-item-day">
-                                                <p>Dia</p>
-                                                <strong>{{weekday}}</strong>
-                                            </div>
+                                        <script>
+                                            count = 0;
+                                        </script>
 
-                                            <div class="hour">
-                                                <p>Horário</p>
-                                                {% if proffy.weekday == weekday %}
-                                                    <strong>{{proffy.time_from}}h - {{proffy.time_to}}h</strong>
-                                                {% else %}
-                                                    <strong> - </strong>
-                                                {% endif %}
-                                            </div>
-                                        </div>
-                                            <script>
-                                                '{% if proffy.weekday == weekday %}'
+                                                <div id='teacher-schedule-content{{weekday + proffy.id}}' class="teacher-schedule-content">
+                                                    <div class="teacher-item-day">
+                                                        <p>Dia</p>
+                                                        <strong>{{weekday}}</strong>
+                                                    </div>
 
-                                                    document.getElementById('teacher-schedule-content{{loop.index + proffy.id}}').style.opacity = '100%'
+                                                    <div class="hour">
+                                                        <p>Horário</p>
+                                                        {% for classSchedule in classSchedules %}
+                                                            {% if proffy.proffy_id == classSchedule.class_id %}
 
-                                                '{% else %}'
+                                                                <strong class="schedule-not-found{{weekday + proffy.id}}"></strong>
+                                                                    <script>
+                                                                        "{% if classSchedule.weekday === weekday %}"
+                                                                            document.querySelector('.schedule-not-found{{weekday + proffy.id}}').innerHTML = "{{classSchedule.time_from}}h - {{classSchedule.time_to}}h"
 
-                                                    document.getElementById('teacher-schedule-content{{loop.index + proffy.id}}').style.opacity = '50%'
+                                                                            document.querySelector('#teacher-schedule-content{{weekday + proffy.id}}').style.opacity = '100%'
 
-                                                '{% endif %}'
-                                            </script>
+                                                                            count++
+                                                                        "{% else %}"
+                                                                            count++
+                                                                            if (count === 1) {
+                                                                                document.querySelector('.schedule-not-found{{weekday + proffy.id}}').innerHTML = '-'
+
+                                                                                document.querySelector('#teacher-schedule-content{{weekday + proffy.id}}').style.opacity = '50%'
+                                                                            }
+                                                                        "{% endif %}"
+    
+                                                                    </script>
+
+                                                            {% endif %}
+                                                        {% endfor %}
+                                                    </div>
+                                                </div>
+                                                
                                     {% endfor %}
 
                                 </div>
@@ -159,8 +213,7 @@
                                 </a>
                             </footer>
                         </article>
-                {%endfor%}
-
+                {% endfor %}
 
         </main>
 
@@ -169,21 +222,11 @@
             </div>
             {% endif %}
 
-        <div class="icon-menu-container">
-            <img class="icon-menu" src="/images/icons/edit-solid.svg" alt="Editar">
+        <div class="icon-menu-container" id="menu-button">
+            <img class="icon-menu" src="/images/icons/edit-solid.svg" alt="Menu">
         </div>
 
     </div>
-
-    <script>
-        function selectAllProffys() {
-            window.location.href = '/study'
-        }      
-        
-        //'{% for proffy in proffys %}'
-        //    console.log('{{proffy.name}}: {{proffy.weekday}}')
-        //'{% endfor %}'
-    </script>
 
 </body>
 </html>

@@ -45,17 +45,12 @@ function raffleProffys(proffys) {
 }
 
 function convertWeekdays(weekday) {
-    const [day, outhers] = weekday.split('-')
+    const [day, others] = weekday.split('-')
     return day
 }
 
 function breakRow(bio) {
-    let a = []
-    a.push(bio.replace('\r\n'))
-    for (let i in a) {
-        return a[i] += '<br>'
-    }
-    //bio.replace(/\\n/g, '<br>')
+    return bio.replace(/\r\n/g, "<br>")
 }
 
 //EXPORT

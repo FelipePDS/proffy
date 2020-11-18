@@ -2,7 +2,7 @@ const Database = require('./database/db')
 
 const { subjects, weekdays, getSubject, getWeekday, convertHoursToMinutes, convertWeekdays, breakRow, raffleProffys } = require('./util/format')
 
-//CONFIGURAR O SERVER / APLICAR / ACESSAR
+//CONFIGURE THE SERVER / APPLY / ACCESS
 function pageLanding(req, res) {
     return res.render("index.html")
 }
@@ -11,85 +11,71 @@ async function pageStudy(req, res) {
 
     const filters = req.query
 
-    //quantidade de proffys
+    //number of proffys
     const queryAmountProffys = "SELECT id FROM proffys"
     const db = await Database
     const idAmountProffys = await db.all(queryAmountProffys)
     const amountProffys = idAmountProffys.length
+    const queryClassSchedule = `
+        SELECT * FROM class_schedule
+    `
+    let query
 
-    //se não usar o form
+    //if don't use the form
     if (!filters.subject || !filters.weekday || !filters.time) {
-        //selecionar tudo
-        const queryAll = `
+        //select all
+        query = `
             SELECT * FROM proffys
 
             INNER JOIN classes ON (classes.proffy_id = proffys.id)
-            INNER JOIN class_schedule ON (class_schedule.class_id = classes.id)
         `
+    } else {
+        //convert hours to minutes
+        const timeToMinutes = convertHoursToMinutes(filters.time)
 
-        try {
-            const db = await Database
-            const proffys = await db.all(queryAll)
-
-            proffys.map((proffy) => {
-                proffy.subject = getSubject(proffy.subject)
-                proffy.weekday = getWeekday(proffy.weekday)
-                proffy.time_from = parseInt(proffy.time_from/60)
-                proffy.time_to = parseInt(proffy.time_to/60)
-                proffy.bio = breakRow(proffy.bio)
-            })
-
-            for (const i in weekdays) {
-                weekdays[i] = convertWeekdays(weekdays[i])
-            }
-            
-            console.log(proffys)
-
-            raffleProffys(proffys)
-
-            return res.render("study.html", { filters, subjects, weekdays, amountProffys, proffys })
-
-        } catch (error) {
-            console.log(error)
-        }
+        //if fill everthing
+        query = `
+            SELECT * FROM proffys
+            INNER JOIN classes ON (classes.proffy_id = proffys.id)
+            INNER JOIN class_schedule ON (class_schedule.class_id = classes.id)
+            WHERE EXISTS(
+                SELECT class_schedule.*
+                FROM class_schedule
+                WHERE class_schedule.class_id = classes.id
+                AND class_schedule.weekday = ${filters.weekday}
+                AND class_schedule.time_from <= ${timeToMinutes}
+                AND class_schedule.time_to > ${timeToMinutes}
+            )
+            AND classes.subject = '${filters.subject}'
+            GROUP BY class_schedule.class_id
+        `
     }
 
-    //converter horas em minutos
-    const timeToMinutes = convertHoursToMinutes(filters.time)
-
-    //se preencher todos
-    const query =`
-        SELECT * FROM proffys
-        INNER JOIN classes ON (classes.proffy_id = proffys.id)
-        INNER JOIN class_schedule ON (class_schedule.class_id = classes.id)
-        WHERE EXISTS(
-            SELECT class_schedule.*
-            FROM class_schedule
-            WHERE class_schedule.class_id = classes.id
-            AND class_schedule.weekday = ${filters.weekday}
-            AND class_schedule.time_from <= ${timeToMinutes}
-            AND class_schedule.time_to > ${timeToMinutes}
-        )
-        AND classes.subject = '${filters.subject}'
-    `
-
-    //caso haja erro na consulta de dados
+    //if there is an error in the data query
     try {
         const db = await Database
         const proffys = await db.all(query)
+        const classSchedules = await db.all(queryClassSchedule)
 
         proffys.map((proffy) => {
             proffy.subject = getSubject(proffy.subject)
-            proffy.weekday = getWeekday(proffy.weekday)
-            proffy.time_from = parseInt(proffy.time_from/60)
-            proffy.time_to = parseInt(proffy.time_to/60)
+            proffy.bio = breakRow(proffy.bio)
+        })
+
+        classSchedules.map((classSchedule) => {
+            classSchedule.weekday = getWeekday(classSchedule.weekday)
+            classSchedule.time_from = parseInt(classSchedule.time_from/60)
+            classSchedule.time_to = parseInt(classSchedule.time_to/60)
+            classSchedule.weekday = convertWeekdays(classSchedule.weekday)
         })
 
         for (const i in weekdays) {
             weekdays[i] = convertWeekdays(weekdays[i])
         }
 
-        return res.render("study.html", { proffys, filters, subjects, weekdays, amountProffys })
+        raffleProffys(proffys)
+
+        return res.render("study.html", { filters, subjects, weekdays, amountProffys, proffys, classSchedules })
 
     } catch (error) {
         console.log(error)
@@ -128,6 +114,7 @@ async function saveClasses(req, res) {
     })
 
     try {
+        
         const db = await Database
         await createProffy(db, { proffyValue, classValue, classScheduleValues })
 

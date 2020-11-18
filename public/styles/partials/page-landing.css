@@ -1,9 +1,9 @@
 #page-landing {
-    background: var(--color-primary);
+    background: var(--colorPrimary);
 }
 
 #page-landing #container {
-    color: var(--color-text-in-primary);
+    color: var(--colorTextInPrimary);
 }
 
 .logo-container img {
@@ -51,7 +51,7 @@
 
     transition: background 0.2s;
 
-    color: var(--color-button-text);
+    color: var(--colorButtonText);
 }
 
 .buttons-container a img {
@@ -60,20 +60,20 @@
 }
 
 .buttons-container a.study {
-    background: var(--color-primary-lighter);
+    background: var(--colorPrimaryLighter);
 }
 
 .buttons-container a.study:hover {
-    background: var(--color-primary-light);
+    background: var(--colorPrimaryLight);
 }
 
 .buttons-container a.give-classes {
-    background: var(--color-secondary);
+    background: var(--colorSecondary);
     margin-right: 0;
 }
 
 .buttons-container a.give-classes:hover {
-    background: var(--color-secondary-dark);
+    background: var(--colorSecondaryDark);
 }
 
 .total-connections {

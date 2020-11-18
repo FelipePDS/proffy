@@ -14,6 +14,9 @@
 
     <link rel="shortout icon" href="/images/favicon.png" type="image/png">
 
+    <script src="/scripts/sidebar.js" defer></script>
+    <script src="/scripts/themes.js" defer></script>
+
 </head>
 
 <body id="page-sucess-page" onload="move()">
@@ -50,7 +53,6 @@
             window.location.href = "/study" + decodedQueryString
         }, 4000);
 
-        //barra de progresso
         function move() {
             var elem = document.getElementById("myBar");
             var width = 1;
