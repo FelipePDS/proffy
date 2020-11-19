@@ -121,7 +121,7 @@
 
                             {%for weekday in weekdays %}
                                 <option value="{{loop.index0}}" {{ "selected" if filters.weekday == loop.index0  }} >
-                                    {{weekday}}
+                                    {{weekday}}{{ "-feira" if loop.index > 1 and loop.index < 7}}
                                 </option>
                             {%endfor%}
 
