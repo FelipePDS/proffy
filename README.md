@@ -5,10 +5,10 @@
 
 <h2 align="center">Requirements to clone the project</h2>
 <p align="center">The necessary tools for development are:
-    <ul>
-        <li>The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
-        <li>Our "server" <a href="https://nodejs.org/">Node.js</a>;</li>
-        <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
+    <ul align="center">
+        <li align="center">The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
+        <li align="center">Our "server" <a href="https://nodejs.org/">Node.js</a>;</li>
+        <li align="center">Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
     </ul>
 </p>
 <p align="center">To clone the project / repository, type the following command in the terminal: <br>$ git clone</p>
@@ -19,15 +19,15 @@
 
 <h2 align="center">Resources / Technologies</h2>
 <ul align="center">
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>Javascript</li>
-    <li>NodeJS</li>
-    <li>Express</li>
-    <li>Nodemon</li>
-    <li>Nunjuncks</li>
-    <li>SQLite</li>
-    <li>Git Bash</li>
+    <li align="center">HTML5</li>
+    <li align="center">CSS3</li>
+    <li align="center">Javascript</li>
+    <li align="center">NodeJS</li>
+    <li align="center">Express</li>
+    <li align="center">Nodemon</li>
+    <li align="center">Nunjuncks</li>
+    <li align="center">SQLite</li>
+    <li align="center">Git Bash</li>
 </ul>
 
 <br>
