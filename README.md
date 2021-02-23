@@ -1,24 +1,24 @@
 # <h1 align="center">NLW-PROFFY</h1>
 <h2 align="center">Description</h2>
-<p>Making a website from scratch in <a href="https://rocketseat.com.br/">RocketSeat</a>'s NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
+<p align="center">Making a website from scratch in <a href="https://rocketseat.com.br/">RocketSeat</a>'s NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
 <p>Let's code</p> <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/> <br>
 
 <h2 align="center">Requirements to clone the project</h2>
-<p>The necessary tools for development are:
+<p align="center">The necessary tools for development are:
     <ul>
         <li>The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
         <li>Our "server" <a href="https://nodejs.org/">Node.js</a>;</li>
         <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
     </ul>
 </p>
-<p>To clone the project / repository, type the following command in the terminal: <br>$ git clone</p>
-<p>To run the server, enter the project's root folder and type the following command in the terminal inside that folder: <br>$ run node dev</p>
-<p>To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
+<p align="center">To clone the project / repository, type the following command in the terminal: <br>$ git clone</p>
+<p align="center">To run the server, enter the project's root folder and type the following command in the terminal inside that folder: <br>$ run node dev</p>
+<p align="center">To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
 
 <br>
 
 <h2 align="center">Resources / Technologies</h2>
-<ul>
+<ul align="center">
     <li>HTML5</li>
     <li>CSS3</li>
     <li>Javascript</li>
@@ -42,4 +42,4 @@
 <br>
 
 <h2 align="center">License</h2>
-<p>The project was carried out by <a href="https://github.com/FelipePDS">Felipe Pinto</a> during the NLW 2 event made by <a href="https://rocketseat.com.br">RocketSeat</a>, however I still made some changes and increments.</p>
+<p align="center">The project was carried out by <a href="https://github.com/FelipePDS">Felipe Pinto</a> during the NLW 2 event made by <a href="https://rocketseat.com.br">RocketSeat</a>, however I still made some changes and increments.</p>
