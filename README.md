@@ -1,4 +1,4 @@
-# <h1 align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/> &nbsp;NLW-PROFFY</h1>
+# <h1 align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/> &nbsp;NLW-PROFFY &nbsp;<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/></h1>
 
 <h2>Description</h2>
 <p>Making a website from scratch in <a href="https://rocketseat.com.br/">RocketSeat</a>'s NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
