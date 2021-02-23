@@ -19,7 +19,7 @@
 
 <h2>Resources / Technologies</h2>
 <ul>
-    <li>HTML5</li>
+    <li color="red">HTML5</li>
     <li>CSS3</li>
     <li>Javascript</li>
     <li>>NodeJS</li>
