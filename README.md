@@ -30,6 +30,7 @@
     <li>Git Bash</li>
 </ul>
 
+<h2>Preview Project</h2>
 <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-01.JPG" alt="Proffy"/>
 <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-02.JPG" alt="Proffy"/>
 <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-03.JPG" alt="Proffy"/>
