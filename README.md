@@ -1,6 +1,6 @@
 # NLW-PROFFY
 <h2>Description</h2>
-<p>Making a website from scratch in the NEXT LEVEL WEEK course. Learning javascript, node.js and frameworks as express</p> <br>
+<p>Making a website from scratch in the NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
 <p>Let's code</p> <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/> <br>
 
 
