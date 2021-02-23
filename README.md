@@ -4,30 +4,30 @@
 <p>Let's code</p> <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/> <br>
 
 <h2 align="center">Requirements to clone the project</h2>
-<p align="center">The necessary tools for development are:
-    <ul align="center">
-        <li align="center">The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
-        <li align="center">Our "server" <a href="https://nodejs.org/">Node.js</a>;</li>
-        <li align="center">Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
+<p>The necessary tools for development are:
+    <ul>
+        <li>The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
+        <li>Our "server" <a href="https://nodejs.org/">Node.js</a>;</li>
+        <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
     </ul>
 </p>
-<p align="center">To clone the project / repository, type the following command in the terminal: <br>$ git clone</p>
-<p align="center">To run the server, enter the project's root folder and type the following command in the terminal inside that folder: <br>$ run node dev</p>
-<p align="center">To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
+<p>To clone the project / repository, type the following command in the terminal: <br>$ git clone</p>
+<p>To run the server, enter the project's root folder and type the following command in the terminal inside that folder: <br>$ run node dev</p>
+<p>To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
 
 <br>
 
 <h2 align="center">Resources / Technologies</h2>
-<ul align="center">
-    <li align="center">HTML5</li>
-    <li align="center">CSS3</li>
-    <li align="center">Javascript</li>
-    <li align="center">NodeJS</li>
-    <li align="center">Express</li>
-    <li align="center">Nodemon</li>
-    <li align="center">Nunjuncks</li>
-    <li align="center">SQLite</li>
-    <li align="center">Git Bash</li>
+<ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>Javascript</li>
+    <li>>NodeJS</li>
+    <li>Express</li>
+    <li>Nodemon</li>
+    <li>Nunjuncks</li>
+    <li>SQLite</li>
+    <li>Git Bash</li>
 </ul>
 
 <br>
@@ -42,4 +42,4 @@
 <br>
 
 <h2 align="center">License</h2>
-<p align="center">The project was carried out by <a href="https://github.com/FelipePDS">Felipe Pinto</a> during the NLW 2 event made by <a href="https://rocketseat.com.br">RocketSeat</a>, however I still made some changes and increments.</p>
+<p>The project was carried out by <a href="https://github.com/FelipePDS">Felipe Pinto</a> during the NLW 2 event made by <a href="https://rocketseat.com.br">RocketSeat</a>, however I still made some changes and increments.</p>
