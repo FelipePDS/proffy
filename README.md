@@ -22,7 +22,7 @@
     <li color="red">HTML5</li>
     <li>CSS3</li>
     <li>Javascript</li>
-    <li>>NodeJS</li>
+    <li>NodeJS</li>
     <li>Express</li>
     <li>Nodemon</li>
     <li>Nunjuncks</li>
