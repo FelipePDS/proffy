@@ -1,9 +1,9 @@
-# NLW-PROFFY
-<h2>Description</h2>
+# <h1 align="center">NLW-PROFFY</h1>
+<h2 align="center">Description</h2>
 <p>Making a website from scratch in <a href="https://rocketseat.com.br/">RocketSeat</a>'s NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
 <p>Let's code</p> <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/> <br>
 
-<h2>Requirements to clone the project</h2>
+<h2 align="center">Requirements to clone the project</h2>
 <p>The necessary tools for development are:
     <ul>
         <li>The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
@@ -17,7 +17,7 @@
 
 <br>
 
-<h2>Resources / Technologies</h2>
+<h2 align="center">Resources / Technologies</h2>
 <ul>
     <li>HTML5</li>
     <li>CSS3</li>
@@ -32,14 +32,14 @@
 
 <br>
 
-<h2>Preview Project</h2>
-<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-01.JPG" alt="Proffy"/>
-<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-02.JPG" alt="Proffy"/>
-<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-03.JPG" alt="Proffy"/>
-<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-04.JPG" alt="Proffy"/>
-<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-05.JPG" alt="Proffy"/>
+<h2 align="center">Preview Project</h2>
+<p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-01.JPG" alt="Proffy"/></p>
+<p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-02.JPG" alt="Proffy"/></p>
+<p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-03.JPG" alt="Proffy"/></p>
+<p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-04.JPG" alt="Proffy"/></p>
+<p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-05.JPG" alt="Proffy"/></p>
 
 <br>
 
-<h2>License</h2>
+<h2 align="center">License</h2>
 <p>The project was carried out by <a href="https://github.com/FelipePDS">Felipe Pinto</a> during the NLW 2 event made by <a href="https://rocketseat.com.br">RocketSeat</a>, however I still made some changes and increments.</p>
