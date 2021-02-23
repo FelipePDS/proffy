@@ -4,7 +4,18 @@
 <p>Let's code</p> <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/> <br>
 
 <h2>Requirements</h2>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quia, deleniti aut, dolores exercitationem ipsum numquam repudiandae quos voluptas corrupti quibusdam assumenda eius! Voluptatibus, nostrum fuga adipisci laborum et repellat!    </p>
+<p>The necessary tools for development are:
+    <ul>
+        <li>The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
+        <li>Our "server" <a href="https://nodejs.org/">Node.js</a>;</li>
+        <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
+    </ul>
+</p>
+<p>To clone the project / repository, type the following command in the terminal: <br>$ git clone</p>
+<p>To run the server, enter the project's root folder and type the following command in the terminal inside that folder: <br>$ run node dev</p>
+<p>To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
+
+<br>
 
 <h2>Resources / Technologies</h2>
 <ul>
