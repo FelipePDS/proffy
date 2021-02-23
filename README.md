@@ -38,3 +38,8 @@
 <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-03.JPG" alt="Proffy"/>
 <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-04.JPG" alt="Proffy"/>
 <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-05.JPG" alt="Proffy"/>
+
+<br>
+
+<h2>License</h2>
+<p>The project was carried out by <a href="https://github.com/FelipePDS">Felipe Pinto</a> during the NLW 2 event made by <a href="https://rocketseat.com.br">RocketSeat</a>, however I still made some changes and increments.</p>
