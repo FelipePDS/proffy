@@ -35,7 +35,8 @@
     $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
     # Install dependencies
     $ npm install
-    # To run the server, enter the project's root folder and type the following command in the terminal inside that folder: <br>$ run node dev</p>
+    # To run the server, enter the project's root folder and type the following command in the terminal inside that folder:
+    $ run node dev
     ```
 </pre>
 <p>To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
