@@ -1,6 +1,6 @@
 # <h1 align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/> &nbsp;NLW-PROFFY &nbsp;<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/></h1>
 
-<p align="end">Project Status: :heavy_check_mark:</p>
+<p align="right">Project Status: concluded :heavy_check_mark:</p>
 
 <p align="center">"Sua plataforma de estudos online"</p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/proffy.png"/></p>
