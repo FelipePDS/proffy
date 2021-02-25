@@ -28,9 +28,11 @@
     </ul>
 </p>
 <pre>
-    <p>> To clone the project / repository, type the following command in the terminal: <br>$ mkdir proffy <br>$ cd proffy <br>$ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git</p>
-    <p>> Install dependencies <br>$ npm install</p>
-    <p>> To run the server, enter the project's root folder and type the following command in the terminal inside that folder: <br>$ run node dev</p>
+    ```bash
+    <p> # To clone the project / repository, type the following command in the terminal: <br>$ mkdir proffy <br>$ cd proffy <br>$ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git</p>
+    <p> # Install dependencies <br>$ npm install</p>
+    <p> # To run the server, enter the project's root folder and type the following command in the terminal inside that folder: <br>$ run node dev</p>
+    ```
 </pre>
 <p>To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
 
