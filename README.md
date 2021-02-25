@@ -3,7 +3,7 @@
 <p align="center">"Sua plataforma de estudos online"</p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/proffy.png"/></p>
 
-<h2 align="center">Summary</h2>
+<h2>Summary</h2>
 <ul>
     <li><a href="">Description</a></li>
     <li><a href="">Requirements to clone the project</a></li>
