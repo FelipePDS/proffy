@@ -1,5 +1,10 @@
 # <h1 align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/> &nbsp;NLW-PROFFY &nbsp;<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/></h1>
 
+### Participante: 
+|name|email|present|receiveCertificate|course|
+| -------- | -------- | -------- |-------- | -------- |
+|Chaiana Hermes|chaiana_hermes@yahoo.com.br|true|false|Bootcamp React|
+
 <p align="center">"Sua plataforma de estudos online"</p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/proffy.png"/></p>
 
