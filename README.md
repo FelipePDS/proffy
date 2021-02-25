@@ -27,7 +27,7 @@
         <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
     </ul>
 </p>
-<pre>
+
     ```javascript
     # To clone the project / repository, type the following command in the terminal:
     $ mkdir proffy
@@ -38,7 +38,7 @@
     # To run the server, enter the project's root folder and type the following command in the terminal inside that folder:
     $ run node dev
     ````
-</pre>
+
 <p>To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
 
 <br>
