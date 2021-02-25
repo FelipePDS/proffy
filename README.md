@@ -5,7 +5,8 @@
 
 <h2 align="center">Description</h2>
 <p align="center">Making a website from scratch in <a href="https://rocketseat.com.br/">RocketSeat</a>'s NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
-<p align="center">Let's code <img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/></p> <br>
+<p align="center">Let's code</p>
+<p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/></p><br>
 
 <h2>Requirements to clone the project</h2>
 <p>The necessary tools for development are:
