@@ -3,7 +3,7 @@
 <p align="center">"Sua plataforma de estudos online"</p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/proffy.png"/></p>
 
-<p align="right">Project Status: concluded :heavy_check_mark:</p>
+<p align="right">| Project Status: concluded :heavy_check_mark:</p>
 
 <h2>Summary</h2>
 <ul>
@@ -27,18 +27,16 @@
         <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
     </ul>
 </p>
-
-    ```javascript
-    # To clone the project / repository, type the following command in the terminal:
-    $ mkdir proffy
-    $ cd proffy
-    $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
-    # Install dependencies
-    $ npm install
-    # To run the server, enter the project's root folder and type the following command in the terminal inside that folder:
-    $ run node dev
-    ````
-
+    <pre>
+        # To clone the project / repository, type the following command in the terminal:
+        $ mkdir proffy
+        $ cd proffy
+        $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
+        # Install dependencies
+        $ npm install
+        # To run the server, enter the project's root folder and type the following command in the terminal inside that folder:
+        $ run node dev
+    </pre>
 <p>To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
 
 <br>
