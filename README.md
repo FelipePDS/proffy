@@ -16,8 +16,8 @@
     </ul>
 </p>
 <pre>
-    <p><span class="pl-c"><span class="pl-c">#</span> " To clone the project / repository, type the following command in the terminal:"</span> <br>$ git clone</p>
-    <p><span class="pl-c"><span class="pl-c">#</span> " To run the server, enter the project's root folder and type the following command in the terminal inside that folder:"</span> <br>$ run node dev</p>
+    <p><span class="pl-c"><span class="pl-c">#</span> To clone the project / repository, type the following command in the terminal:</span> <br>$ git clone</p>
+    <p><span class="pl-c"><span class="pl-c">#</span> To run the server, enter the project's root folder and type the following command in the terminal inside that folder:</span> <br>$ run node dev</p>
 </pre>
 <p>To access the project through the browser, type the following URL: <br>http://localhost: 5500/</p>
 
