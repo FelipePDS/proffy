@@ -29,13 +29,13 @@
 </p>
 <div class="highlight highlight-source-shell">
 <pre>
-# To clone the project / repository, type the following command in the terminal:
+<blockquote># To clone the project / repository, type the following command in the terminal:</blockquote>
 $ mkdir proffy
 $ cd proffy
 $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git <br>
-# Install dependencies
+<blockquote># Install dependencies</blockquote>
 $ npm install <br>
-# To run the server, enter the project's root folder and type the following command in the terminal inside that folder:
+<blockquote># To run the server, enter the project's root folder and type the following command in the terminal inside that folder:</blockquote>
 $ run node dev
 </pre>
     </div>
