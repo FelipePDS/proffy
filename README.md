@@ -27,7 +27,7 @@
         <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
     </ul>
 </p>
-:heavy_dollar_sign:
+
 ```bash
 # To clone the project, type the following command in the terminal:
 $ mkdir proffy
