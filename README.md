@@ -29,7 +29,7 @@
 </p>
 <div class="highlight highlight-source-shell">
 <pre>
-###### # To clone the project, type the following command in the terminal:
+# To clone the project, type the following command in the terminal:
 $ mkdir proffy
 $ cd proffy
 $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git <br>
