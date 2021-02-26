@@ -27,18 +27,18 @@
         <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
     </ul>
 </p>
-<div class="highlight highlight-source-shell">
-<pre>
+
+```bash
 # To clone the project, type the following command in the terminal:
 $ mkdir proffy
 $ cd proffy
-$ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git <br>
+$ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
 # Install dependencies
-$ npm install <br>
+$ npm install
 # To run the server, enter the project's root folder and type the following command in the terminal inside that folder:
 $ run node dev
-</pre>
-</div>
+```
+
 <p>To access the project through the browser, type the following URL: <br><code>http://localhost:5500/</code></p>
 
 <br>
