@@ -8,10 +8,10 @@
 <h2>Summary</h2>
 <ul>
     <li><a href="#description">Description</a></li>
-    <li><a href="">Requirements to clone the project</a></li>
-    <li><a href="">Resources / Technologies</a></li>
-    <li><a href="">Preview Project</a></li>
-    <li><a href="">License</a></li>
+    <li><a href="#clone-project">Requirements to clone the project</a></li>
+    <li><a href="#technologies">Technologies</a></li>
+    <li><a href="#preview-project">Preview Project</a></li>
+    <li><a href="#license">License</a></li>
 </ul>
 
 <h2 align="center" id="description">Description</h2>
@@ -19,7 +19,7 @@
 <p align="center">Let's code</p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/></p><br>
 
-<h2>Requirements to clone the project</h2>
+<h2 id="clone-project">Requirements to clone the project</h2>
 <p>The necessary tools for development are:
     <ul>
         <li>The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
@@ -43,7 +43,7 @@ $ run node dev
 
 <br>
 
-<h2>Resources / Technologies</h2>
+<h2 id="technologies">Resources / Technologies</h2>
 <ul>
     <li color="red">HTML5</li>
     <li>CSS3</li>
@@ -58,7 +58,7 @@ $ run node dev
 
 <br>
 
-<h2 align="center">Preview Project</h2>
+<h2 align="center" id="preview-project">Preview Project</h2>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-01.JPG" alt="Proffy"/></p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-02.JPG" alt="Proffy"/></p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-03.JPG" alt="Proffy"/></p>
@@ -67,5 +67,5 @@ $ run node dev
 
 <br>
 
-<h2>License</h2>
+<h2 id="license">License</h2>
 <p>The project was carried out by <a href="https://github.com/FelipePDS">Felipe Pinto</a> during the NLW 2 event made by <a href="https://rocketseat.com.br">RocketSeat</a>, however I still made some changes and increments.</p>
