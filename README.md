@@ -27,10 +27,10 @@
         <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
     </ul>
 </p>
-
+:heavy_dollar_sign:
 ```bash
 # To clone the project, type the following command in the terminal:
-:heavy_dollar_sign: mkdir proffy
+$ mkdir proffy
 $ cd proffy
 $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
 
