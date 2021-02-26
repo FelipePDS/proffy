@@ -7,14 +7,14 @@
 
 <h2>Summary</h2>
 <ul>
-    <li><a href="">Description</a></li>
+    <li><a href="#description">Description</a></li>
     <li><a href="">Requirements to clone the project</a></li>
     <li><a href="">Resources / Technologies</a></li>
     <li><a href="">Preview Project</a></li>
     <li><a href="">License</a></li>
 </ul>
 
-<h2 align="center">Description</h2>
+<h2 align="center" id="description">Description</h2>
 <p align="center">Making a website from scratch in <a href="https://rocketseat.com.br/">RocketSeat</a>'s NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
 <p align="center">Let's code</p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/></p><br>
