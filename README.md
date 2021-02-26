@@ -30,7 +30,7 @@
 
 ```bash
 # To clone the project, type the following command in the terminal:
-$ mkdir proffy
+:heavy_dollar_sign: mkdir proffy
 $ cd proffy
 $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
 
