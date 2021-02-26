@@ -34,10 +34,10 @@ $ mkdir proffy
 $ cd proffy
 $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
 
-# Install dependencies
+# Install dependencies:
 $ npm install
 
-# To run the server, enter the project's root folder and type the following command in the terminal inside that folder:
+# To run the server:
 $ run node dev
 ```
 
