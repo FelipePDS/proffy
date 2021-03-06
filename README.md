@@ -71,4 +71,4 @@ $ run node dev
 <br>
 
 <h2 id="license">License</h2>
-<p>MIT License &nbsp;&bull;&nbsp; &copy; FelipePDS</p>
+<p><a href="https://github.com/FelipePDS/NextLevelWeek2-proffy/blob/master/LICENSE">MIT License</a> &nbsp;&bull;&nbsp; &copy; FelipePDS</p>
