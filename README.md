@@ -30,14 +30,13 @@
 
 ```bash
 # To clone the project, type the following command in the terminal:
-$ mkdir proffy
-$ cd proffy
 $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
+
+# Enter the project folder:
+$ cd NextLevelWeek2-proffy
 
 # Install dependencies:
 $ npm install
-# or if you use yarn
-$ yarn add
 
 # To run the server:
 $ run node dev
