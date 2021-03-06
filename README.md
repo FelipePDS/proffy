@@ -71,4 +71,4 @@ $ run node dev
 <br>
 
 <h2 id="license">License</h2>
-<p>The project was carried out by <a href="https://github.com/FelipePDS">Felipe Pinto</a> during the NLW 2 event made by <a href="https://rocketseat.com.br">RocketSeat</a>, however I still made some changes and increments.</p>
+<p>the project is under the mit license &bull; FelipePDS</p>
