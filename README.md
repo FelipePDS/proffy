@@ -8,9 +8,9 @@
 <h2 align="center">Summary</h2>
 <p align="center">
     <a href="#description">Description</a> &bull; 
-    <a href="#clone-project">Requirements to clone the project</a>&bull; 
-    <a href="#technologies">Technologies</a>&bull; 
-    <a href="#preview-project">Preview Project</a>&bull; 
+    <a href="#clone-project">Requirements to clone the project</a> &bull; 
+    <a href="#technologies">Technologies</a> &bull; 
+    <a href="#preview-project">Preview Project</a> &bull; 
     <a href="#license">License</a>
 </p>
 
