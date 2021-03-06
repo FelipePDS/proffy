@@ -5,14 +5,14 @@
 
 <p align="right"><blockquote>Project Status: concluded :heavy_check_mark:</blockquote></p>
 
-<h2>Summary</h2>
-<ul>
-    <li><a href="#description">Description</a></li>
-    <li><a href="#clone-project">Requirements to clone the project</a></li>
-    <li><a href="#technologies">Technologies</a></li>
-    <li><a href="#preview-project">Preview Project</a></li>
-    <li><a href="#license">License</a></li>
-</ul>
+<h2 align="center">Summary</h2>
+<p align="center">
+    <a href="#description">Description</a> &bull; 
+    <a href="#clone-project">Requirements to clone the project</a>&bull; 
+    <a href="#technologies">Technologies</a>&bull; 
+    <a href="#preview-project">Preview Project</a>&bull; 
+    <a href="#license">License</a>
+</p>
 
 <h2 align="center" id="description">Description</h2>
 <p align="center">Making a website from scratch in <a href="https://rocketseat.com.br/">RocketSeat</a>'s NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
