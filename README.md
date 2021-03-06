@@ -61,7 +61,7 @@ $ run node dev
 
 <br>
 
-<h2 align="center" id="preview-project">Preview Project</h2>
+<h2 id="preview-project">Preview Project</h2>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-01.JPG" alt="Proffy"/></p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-02.JPG" alt="Proffy"/></p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-03.JPG" alt="Proffy"/></p>
