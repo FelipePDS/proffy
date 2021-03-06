@@ -36,7 +36,7 @@ $ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
 
 # Install dependencies:
 $ npm install
-# or
+# or if you use yarn
 $ yarn add
 
 # To run the server:
