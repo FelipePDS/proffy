@@ -51,12 +51,12 @@ $ run node dev
     <li color="red">HTML5</li>
     <li>CSS3</li>
     <li>Javascript</li>
-    <li>NodeJS</li>
-    <li>Express</li>
+    <li><a href="https://nodejs.org/">NodeJS</a></li>
+    <li><a href="https://expressjs.com/pt-br/">Express</a></li>
     <li>Nodemon</li>
     <li>Nunjuncks</li>
-    <li>SQLite</li>
-    <li>Git Bash</li>
+    <li><a href="https://www.sqlite.org/">SQLite</a></li>
+    <li><a href="https://git-scm.com/downloads">Git Bash</a></li>
 </ul>
 
 <br>
