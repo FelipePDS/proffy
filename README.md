@@ -71,4 +71,4 @@ $ run node dev
 <br>
 
 <h2 id="license">License</h2>
-<p>the project is under the mit license &bull; FelipePDS</p>
+<p>MIT License &bull; FelipePDS</p>
