@@ -22,9 +22,9 @@
 <h2 id="clone-project">Requirements to clone the project</h2>
 <p>The necessary tools for development are:
     <ul>
-        <li>The <a href="https://code.visualstudio.com/">Visual Studio Code</a> editor;</li>
-        <li>Our "server" <a href="https://nodejs.org/">Node.js</a>;</li>
-        <li>Our "command executor" for the <a href="https://git-scm.com/downloads">GitBash</a> terminal.</li>
+        <li>The <kbd><a href="https://code.visualstudio.com/">Visual Studio Code</a></kbd> editor;</li>
+        <li>Our "server" <kbd><a href="https://nodejs.org/">Node.js</a></kbd>;</li>
+        <li>Our "command executor" for the <kbd><a href="https://git-scm.com/downloads">GitBash</a></kbd> terminal.</li>
     </ul>
 </p>
 
@@ -51,12 +51,12 @@ $ run node dev
     <li color="red">HTML5</li>
     <li>CSS3</li>
     <li>Javascript</li>
-    <li><a href="https://nodejs.org/">NodeJS</a></li>
-    <li><a href="https://expressjs.com/pt-br/">Express</a></li>
+    <li><kbd><a href="https://nodejs.org/">NodeJS</a></kbd></li>
+    <li><kbd><a href="https://expressjs.com/pt-br/">Express</a></kbd></li>
     <li>Nodemon</li>
     <li>Nunjuncks</li>
-    <li><a href="https://www.sqlite.org/">SQLite</a></li>
-    <li><a href="https://git-scm.com/downloads">Git Bash</a></li>
+    <li><kbd><a href="https://www.sqlite.org/">SQLite</a></kbd></li>
+    <li><kbd><a href="https://git-scm.com/downloads">Git Bash</a></kbd></li>
 </ul>
 
 <br>
