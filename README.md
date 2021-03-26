@@ -10,7 +10,7 @@
     <a href="#description">Description</a> &bull; 
     <a href="#clone-project">Requirements to clone the project</a> &bull; 
     <a href="#technologies">Technologies</a> &bull; 
-    <a href="#preview-project">Preview Project</a> &bull; 
+    <a href="#layout">:computer: Layout</a> &bull; 
     <a href="#license">License</a>
 </p>
 
@@ -61,7 +61,7 @@ $ run node dev
 
 <br>
 
-<h2 id="preview-project">Preview Project</h2>
+<h2 id="layout">:computer: Layout</h2>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-01.JPG" alt="Proffy"/></p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-02.JPG" alt="Proffy"/></p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-03.JPG" alt="Proffy"/></p>
