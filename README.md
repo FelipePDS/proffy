@@ -1,5 +1,7 @@
 # <h1 align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/> &nbsp;NLW-PROFFY &nbsp;<img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/favicon.png" alt="Proffy"/></h1>
 
+<p align="center"><a href="https://felipepds.github.io/Snake-Game/"><img src="https://img.shields.io/static/v1?label=node&message=v12.8.0&color=339933&style=flat&logo=node.js&logoColor=white"/></a> <a href="https://felipepds.github.io/Snake-Game/"><img src="https://img.shields.io/static/v1?label=npm&message=v6.14.4&color=CB3837&style=flat&logo=npm&logoColor=white"/></a> <img src="https://img.shields.io/github/repo-size/FelipePDS/proffy"/> <a href="https://felipepds.github.io/Snake-Game/"><img src="https://img.shields.io/github/license/FelipePDS/proffy"/></a> <br> <a href="https://felipepds.github.io/Snake-Game/"><img src="https://img.shields.io/static/v1?label=backend&message=Express&color=8257e5&style=flat&logo=+&logoColor=white"/></a> <a href="https://felipepds.github.io/Snake-Game/"><img src="https://img.shields.io/static/v1?label=frontend&message=HTML5+|+CSS3+|+JavaScript&color=8257e5&style=flat&logo=+&logoColor=white"/></a></p>
+
 <p align="center">"Sua plataforma de estudos online"</p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/proffy.png"/></p>
 
