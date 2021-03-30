@@ -7,16 +7,24 @@
 
 <p align="right"><blockquote>Project Status: concluded :heavy_check_mark:</blockquote></p>
 
-<h2 align="center">Summary</h2>
-<p align="center">
-    <a href="#description">Description</a> &bull; 
-    <a href="#clone-project">Requirements to clone the project</a> &bull; 
-    <a href="#technologies">Technologies</a> &bull; 
-    <a href="#layout">:computer: Layout</a> &bull; 
-    <a href="#license">License</a>
+<h2 align="center">:clipboard: Summary</h2>
+<p>
+    <ul>
+        <li><a href="#description">:page_facing_up: Description</a></li>
+        <li><a href="#clone-project">Requirements to clone the project</a></li>
+        <li><a href="#technologies">:wrench: Technologies</a></li>
+            <ul>
+                <li><a href="#technologies-frontend">Frontend</a></li>
+                <li><a href="#technologies-backend">Backend</a></li>
+                <li><a href="#technologies-dev">Dev</a></li>
+            </ul>
+        <li><a href="#layout">:computer: Layout</a></li>
+        <li><a href="#author">:bust_in_silhouette: Author</a></li>
+        <li><a href="#license">License</a></li>
+    </ul>
 </p>
 
-<h2 align="center" id="description">Description</h2>
+<h2 align="center" id="description">:page_facing_up: Description</h2>
 <p align="center">Making a website from scratch in <a href="https://rocketseat.com.br/">RocketSeat</a>'s NEXT LEVEL WEEK course, the platform aims to enroll teachers to teach classes to students according to what they seek. Learning javascript, node.js and frameworks as express</p> <br>
 <p align="center">Let's code</p>
 <p align="center"><img src="https://github.com/FelipePDS/NextLevelWeek-proffy/blob/master/public/images/git-06.png"/></p><br>
@@ -48,7 +56,7 @@ $ run node dev
 
 <br>
 
-<h2 id="technologies">Resources / Technologies</h2>
+<h2 id="technologies">:wrench: Technologies</h2>
 <ul>
     <li color="red">HTML5</li>
     <li>CSS3</li>
@@ -72,7 +80,7 @@ $ run node dev
 
 <br>
 
-<h2 id="author">Author</h2>
+<h2 id="author">:bust_in_silhouette: Author</h2>
 <p align="center"><img width="100px" src="https://avatars.githubusercontent.com/u/64941387?s=400&u=a9c0d7a657b0b0b644d41cd88966e0a89d0a67a6&v=4"/></p>
 <p align="center">Made by :purple_heart: <a href="https://felipepds.github.io/felipepds-resume/">FelipePDS</a></p>
 <p align="center"><a href="https://app.rocketseat.com.br/me/felipe-pinto-da-silva-03738"><img src="https://img.shields.io/static/v1?label=RocketSeat&message=Felipe+Pinto+Da+Silva&color=8257e6&style=flat&logo=+&logoColor=white"/></a> <br> <a href="https://www.linkedin.com/in/felipe-p-da-silva-a55b891ba/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BiErPy3g7Q1KGOaD%2BsGw%2Fpg%3D%3D"><img src="https://img.shields.io/static/v1?label=+&message=Felipe+P.+Da+Silva&color=0A66C2&style=flat&logo=linkedin&logoColor=white"/></a> <a href="https://twitter.com/FelipePintoDaS1"><img src="https://img.shields.io/static/v1?label=+&message=@FelipePintoDaS1&color=1DA1F2&style=flat&logo=twitter&logoColor=white"/></a> <img src="https://img.shields.io/static/v1?label=+&message=felipepdasilva66@gmail.com&color=EA4335&style=flat&logo=gmail&logoColor=white"/></p>
