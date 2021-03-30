@@ -57,15 +57,26 @@ $ run node dev
 <br>
 
 <h2 id="technologies">:wrench: Technologies</h2>
+
+<h3 id="technologies-frontend">Frontend</h3>
 <ul>
-    <li color="red">HTML5</li>
+    <li>HTML5</li>
     <li>CSS3</li>
     <li>Javascript</li>
+    <li>Nunjuncks</li>
+</ul>
+
+<h3 id="technologies-backend">Backend</h3>
+<ul>
     <li><kbd><a href="https://nodejs.org/">NodeJS</a></kbd></li>
     <li><kbd><a href="https://expressjs.com/pt-br/">Express</a></kbd></li>
     <li>Nodemon</li>
-    <li>Nunjuncks</li>
     <li><kbd><a href="https://www.sqlite.org/">SQLite</a></kbd></li>
+</ul>
+
+<h3 id="technologies-dev">Dev</h3>
+<ul>
+    <li><kbd><a href="https://code.visualstudio.com/">Visual Studio Code</a></kbd></li>
     <li><kbd><a href="https://git-scm.com/downloads">Git Bash</a></kbd></li>
 </ul>
 
