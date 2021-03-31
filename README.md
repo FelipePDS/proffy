@@ -40,10 +40,10 @@
 
 ```bash
 # To clone the project, type the following command in the terminal:
-$ git clone https://github.com/FelipePDS/NextLevelWeek2-proffy.git
+$ git clone https://github.com/FelipePDS/proffy.git
 
 # Enter the project folder:
-$ cd NextLevelWeek2-proffy
+$ cd proffy
 
 # Install dependencies:
 $ npm install
